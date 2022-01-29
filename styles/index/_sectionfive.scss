@@ -8,10 +8,51 @@
     }
     & > .label-one {
       color: $royalBlue;
+      &:hover {
+        transition: 0.3s ease;
+        text-shadow: 0 0 8px $tintBlue;
+      }
     }
   }
   &-accordion {
     max-width: 845px;
     width: 100%;
   }
+}
+
+// accordion change
+button {
+  & > .h6 {
+    padding: 15px;
+  }
+}
+.accordion-button {
+  border: none;
+  background-color: transparent;
+  &::after {
+    background-image: url(../../assets/icons/plus.svg);
+  }
+  &:not(.collapsed)::after {
+    background-image: url(../../assets/icons/plus.svg);
+    transform: rotate(-45deg);
+  }
+  &:not(.collapsed) {
+    background-color: transparent;
+    box-shadow: none;
+  }
+  &:focus {
+    box-shadow: none;
+    border-color: transparent;
+  }
+}
+.accordion-item {
+  border: none;
+  padding: 10px 0px;
+}
+.accordion-body {
+  padding: 5px 90px 5px 115px;
+}
+span.accordion-span {
+  margin-right: 60px;
+  color: $royalBlue;
 }
