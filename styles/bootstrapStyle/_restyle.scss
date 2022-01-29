@@ -1,0 +1,30 @@
+//  HEADER BURGER MENU (ALL PAGE)
+//  BUTTON
+.navbar {
+  &-toggler {
+    &:focus {
+      box-shadow: none;
+    }
+    &-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 28px;
+        height: 3px;
+        background: $white;
+        transform: translateY(6px);
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        width: 28px;
+        height: 3px;
+        background: $white;
+        transform: translateY(-6px);
+      }
+    }
+  }
+}

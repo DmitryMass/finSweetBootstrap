@@ -107,3 +107,118 @@ li {
 // keyframes
 
 // mediaquerry
+@media screen and (max-width: 1400px) {
+  // flex containers  MAIN SECtion
+  .main {
+    padding-bottom: 40px;
+    & > .flex-container {
+      justify-content: center;
+    }
+    &-title {
+      padding-bottom: 40px;
+    }
+  }
+  //  SECTION FIRST ( MAIN PAGE )
+  .sectionfirst {
+    padding: 60px 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  //  SECTION FIRST (MAIN PAGE)
+  .sectionfirst {
+    & > .flex-container {
+      gap: 30px;
+      justify-content: center;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  // HEADER  BURGER MENU
+  .navbar {
+    display: block;
+  }
+  .header {
+    &-nav {
+      display: none;
+    }
+  }
+  //  SECTION FIRST ( MAIN PAGE )
+}
+@media screen and (max-width: 768px) {
+  .main {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    &-title {
+      padding-bottom: 20px;
+      max-width: 480px;
+      & > .h1 {
+        font-size: 42px;
+        line-height: 54px;
+      }
+    }
+  }
+  //  SECTION FIRST ( MAIN PAGE )
+  .sectionfirst {
+    padding: 30px 0;
+    &-list {
+      justify-content: center;
+      gap: 20px;
+    }
+    &-title {
+      & > .h2 {
+        font-size: 42px;
+        line-height: 54px;
+      }
+    }
+  }
+}
+// MAIN SECTION
+
+@media screen and (max-width: 576px) {
+  // MAIN SECTION
+  .main {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    &-title {
+      padding-bottom: 20px;
+      max-width: 350px;
+      & > .flex-container {
+        gap: 20px;
+        justify-content: center;
+      }
+      & > .h1 {
+        font-size: 32px;
+        line-height: 46px;
+      }
+    }
+  }
+  //  SECTION FIRST ( MAIN PAGE )
+  .sectionfirst {
+    padding: 20px 0;
+    &-title {
+      & > .h2 {
+        font-size: 32px;
+        line-height: 46px;
+      }
+    }
+    &-list {
+      &__box {
+        & > .h5 {
+          font-size: 26px;
+          line-height: 38px;
+        }
+      }
+    }
+  }
+}
+
+//  HEADER BURGER MENU (BOOTSTRAP RESTYLE)
+.offcanvas {
+  width: 200px;
+  position: fixed;
+  height: 450px;
+  top: 0%;
+  right: 0;
+  border-radius: 12px 0px 0px 85px;
+  background: $tintBlue;
+}

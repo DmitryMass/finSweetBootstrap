@@ -39,3 +39,45 @@
     }
   }
 }
+
+//  NAVBAR BURGER MENU HEADER
+.offcanvas {
+  &-link {
+    color: $white;
+    text-shadow: 0 0 4px $white;
+    &:hover {
+      color: $white;
+      text-shadow: 0 0 8px $white;
+    }
+  }
+}
+.navbar {
+  display: none;
+  &-nav {
+    & > .header-btn {
+      margin-top: 15px;
+    }
+  }
+}
+.btn-exit {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+.btn-icon {
+  width: 25px;
+  height: 25px;
+  color: $white;
+}
+.nav {
+  &-item {
+    & > .nav-link {
+      color: $grey;
+      padding-left: 15px;
+      &:hover {
+        color: $white;
+        text-shadow: 0 0 8px $white;
+      }
+    }
+  }
+}
