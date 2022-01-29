@@ -1,0 +1,35 @@
+.sectionseven {
+  &-title {
+    padding-bottom: 65px;
+  }
+  &-box {
+    &__item {
+      max-width: 405px;
+      & > img {
+        padding-bottom: 40px;
+      }
+      & > .h6 {
+        padding-bottom: 15px;
+      }
+      & > .p1-body {
+        padding-bottom: 30px;
+        opacity: 0.7;
+      }
+      & > .label-two {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        &:hover {
+          transition: 0.3s ease;
+          color: $darkBlue;
+          text-shadow: 0 0 10px $tintBlue;
+        }
+      }
+    }
+    &__obj {
+      margin-left: 10px;
+      position: relative;
+      z-index: -1;
+    }
+  }
+}

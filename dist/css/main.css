@@ -314,9 +314,8 @@
 }
 
 .sectionfirst {
-  min-height: 661px;
   background-color: #f4f6fc;
-  padding-top: 130px;
+  padding: 130px 0px;
 }
 
 .sectionfirst > .flex-container {
@@ -550,7 +549,6 @@
 }
 
 .sectionfour {
-  min-height: 506px;
   padding: 130px 0;
   background: rgba(244, 246, 252, 0.7);
 }
@@ -621,7 +619,6 @@
 }
 
 .sectionfive {
-  min-height: 800px;
   padding: 130px 0;
 }
 
@@ -668,6 +665,7 @@ button > .h6 {
 .accordion-button:not(.collapsed) {
   background-color: transparent;
   box-shadow: none;
+  color: #282938;
 }
 
 .accordion-button:focus {
@@ -687,6 +685,166 @@ button > .h6 {
 span.accordion-span {
   margin-right: 60px;
   color: #2405f2;
+}
+
+.sectionsix {
+  padding-bottom: 130px;
+}
+
+.sectionsix-bgc {
+  background-image: url(../../assets/images/writingWoman.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  z-index: -1;
+  min-height: 691px;
+  max-width: 650px;
+  padding: 95px 95px 0px 95px;
+}
+
+.sectionsix-bgc > .h1 {
+  padding-bottom: 25px;
+  color: #ffffff;
+  z-index: 1;
+  position: relative;
+}
+
+.sectionsix-bgc > .p2-body {
+  color: #ffffff;
+  z-index: 1;
+  position: relative;
+}
+
+.sectionsix-bgc::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(28, 30, 83, 0.5);
+}
+
+.sectionsix-form {
+  max-width: 625px;
+  min-height: 691px;
+  width: 100%;
+  background-color: #1c1e53;
+}
+
+.sectionsix-block {
+  max-width: 420px;
+  margin: 0 auto;
+  text-align: left;
+  padding-top: 95px;
+}
+
+.sectionsix-title {
+  padding-bottom: 40px;
+}
+
+.sectionsix-title > .h5 {
+  padding-bottom: 15px;
+  color: #ffffff;
+}
+
+.sectionsix-title > .label-two {
+  color: #f4f6fc;
+}
+
+.sectionsix-input {
+  width: 100%;
+  height: 65px;
+  border: 1.5px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  background-color: transparent;
+  color: #ffffff;
+  padding-left: 30px;
+  opacity: 0.8;
+}
+
+.sectionsix-input::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+.sectionsix-input:focus-visible {
+  outline: none;
+  box-shadow: 0 0 4px #ffffff;
+}
+
+.sectionsix-email {
+  padding: 15px 0px;
+}
+
+.sectionsix-url {
+  padding-bottom: 40px;
+}
+
+.sectionsix-link {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+.sectionsix-link:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px #ffffff;
+  transition: 0.2s ease;
+}
+
+.sectionsix-obj {
+  position: relative;
+  z-index: -1;
+}
+
+.sectionsix-button {
+  width: 100%;
+  height: 65px;
+  font-weight: 600;
+  margin-bottom: 45px;
+}
+
+.sectionseven-title {
+  padding-bottom: 65px;
+}
+
+.sectionseven-box__item {
+  max-width: 405px;
+}
+
+.sectionseven-box__item > img {
+  padding-bottom: 40px;
+}
+
+.sectionseven-box__item > .h6 {
+  padding-bottom: 15px;
+}
+
+.sectionseven-box__item > .p1-body {
+  padding-bottom: 30px;
+  opacity: 0.7;
+}
+
+.sectionseven-box__item > .label-two {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.sectionseven-box__item > .label-two:hover {
+  transition: 0.3s ease;
+  color: #282938;
+  text-shadow: 0 0 10px #1c1e53;
+}
+
+.sectionseven-box__obj {
+  margin-left: 10px;
+  position: relative;
+  z-index: -1;
 }
 
 .footer {
@@ -793,5 +951,11 @@ li {
 .accordion-flex {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.sectionsix-container {
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }

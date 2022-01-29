@@ -1,0 +1,13 @@
+section.sectionseven 
+    .container 
+        .sectionseven-title 
+            h2.h2 Our blog
+        .sectionseven-box.flex-wrap 
+            each boxVar in boxItem
+                .sectionseven-box__item 
+                    img(src=boxVar.img, alt="")
+                    p.label-two=boxVar.date
+                    h6.h6=boxVar.title
+                    p.p1-body=boxVar.txt
+                    a.label-two(href="#") Read More
+                        object.sectionseven-box__obj(data=boxVar.object, type="")  

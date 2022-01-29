@@ -1,7 +1,6 @@
 .sectionfirst {
-  min-height: 661px;
   background-color: $grey;
-  padding-top: 130px;
+  padding: 130px 0px;
   & > .flex-container {
     justify-content: space-between;
     align-items: inherit;

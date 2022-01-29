@@ -9,6 +9,8 @@
 @import "./sectionthird";
 @import "./sectionfour";
 @import "./sectionfive";
+@import "./sectionsix";
+@import "./sectionseven";
 @import "../footer";
 
 html,
@@ -95,6 +97,11 @@ li {
 .accordion-flex {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+.sectionsix-container {
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 // keyframes

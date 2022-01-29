@@ -1,0 +1,102 @@
+.sectionsix {
+  padding-bottom: 130px;
+  &-bgc {
+    background-image: url(../../assets/images/writingWoman.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: -1;
+    min-height: 691px;
+    max-width: 650px;
+    padding: 95px 95px 0px 95px;
+    & > .h1 {
+      padding-bottom: 25px;
+      color: $white;
+      z-index: 1;
+      position: relative;
+    }
+    & > .p2-body {
+      color: $white;
+      z-index: 1;
+      position: relative;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(28, 30, 83, 0.5);
+    }
+  }
+  &-form {
+    max-width: 625px;
+    min-height: 691px;
+    width: 100%;
+    background-color: $tintBlue;
+  }
+  &-block {
+    max-width: 420px;
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 95px;
+  }
+  &-title {
+    padding-bottom: 40px;
+    & > .h5 {
+      padding-bottom: 15px;
+      color: $white;
+    }
+    & > .label-two {
+      color: $grey;
+    }
+  }
+  &-input {
+    width: 100%;
+    height: 65px;
+    border: 1.5px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    background-color: transparent;
+    color: $white;
+    padding-left: 30px;
+    opacity: 0.8;
+    &::-webkit-input-placeholder {
+      opacity: 0.5;
+    }
+    &:focus-visible {
+      outline: none;
+      box-shadow: 0 0 4px $white;
+    }
+  }
+  &-email {
+    padding: 15px 0px;
+  }
+  &-url {
+    padding-bottom: 40px;
+  }
+  &-link {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 35px;
+    &:hover {
+      color: $white;
+      text-shadow: 0 0 8px $white;
+      transition: 0.2s ease;
+    }
+  }
+  &-obj {
+    position: relative;
+    z-index: -1;
+  }
+  &-button {
+    width: 100%;
+    height: 65px;
+    font-weight: 600;
+    margin-bottom: 45px;
+  }
+}

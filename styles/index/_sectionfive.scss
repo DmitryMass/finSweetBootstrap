@@ -1,5 +1,4 @@
 .sectionfive {
-  min-height: 800px;
   padding: 130px 0;
   &-ask {
     max-width: 330px;
@@ -39,6 +38,7 @@ button {
   &:not(.collapsed) {
     background-color: transparent;
     box-shadow: none;
+    color: $darkBlue;
   }
   &:focus {
     box-shadow: none;
