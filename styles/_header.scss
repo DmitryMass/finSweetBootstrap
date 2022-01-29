@@ -1,0 +1,41 @@
+.header {
+  background-color: $tintBlue;
+  &-logo {
+    padding: 32px 0;
+    &__link {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+    }
+    &__obj {
+      position: relative;
+      z-index: -1;
+    }
+  }
+  &-nav {
+    &__link {
+      display: inline-block;
+      padding: 12px 16px;
+      color: $whiteGrey;
+      &:hover {
+        color: $white;
+        transition: 0.3s ease;
+      }
+    }
+  }
+  &-btn {
+    background-color: transparent;
+    color: $white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 40px;
+    margin-left: 20px;
+    &__link {
+      display: inline-block;
+      padding: 12px 16px;
+      &:hover {
+        color: $white;
+        text-shadow: 1px 3px 5px $white;
+      }
+    }
+  }
+}

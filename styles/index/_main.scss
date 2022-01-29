@@ -1,0 +1,55 @@
+.main {
+  min-height: 668px;
+  background-color: $tintBlue;
+  padding-top: 125px;
+  margin-top: -1px;
+  & > .flex-container {
+    justify-content: space-between;
+  }
+  &-title {
+    max-width: 580px;
+    & > .flex-container {
+      gap: 40px;
+    }
+    & > .h1 {
+      margin-bottom: 25px;
+      color: $white;
+    }
+    & > .p2-body {
+      max-width: 560px;
+      color: $white;
+      opacity: 0.7;
+      margin-bottom: 50px;
+    }
+  }
+  &-btn {
+    & > .button {
+      width: 230px;
+      height: 64px;
+    }
+    &__link {
+      padding: 20px 40px;
+      &:hover {
+        color: $black;
+      }
+    }
+    &__price {
+      color: $white;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      &:hover {
+        color: $white;
+        text-shadow: 0px 0px 8px $grey;
+      }
+    }
+    &__obj {
+      position: relative;
+      z-index: -1;
+      margin-left: 15px;
+    }
+  }
+  &-img {
+    width: 100%;
+  }
+}

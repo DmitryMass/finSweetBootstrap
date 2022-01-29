@@ -1,0 +1,12 @@
+section.sectionthird 
+    .container 
+        .sectionthird-title 
+            p.label-two Features
+            h2.h2 Design that solves problems, one product at a time
+        .sectionthird-block 
+            each s3Var in section3Var
+                .sectionthird-box 
+                    object(data=s3Var.object, type="") 
+                    h6.h6=s3Var.title
+                    p.p1-body=s3Var.txt
+

@@ -1,0 +1,50 @@
+.sectionfirst {
+  min-height: 661px;
+  background-color: $grey;
+  padding-top: 130px;
+  & > .flex-container {
+    justify-content: space-between;
+    align-items: inherit;
+  }
+  &-title {
+    max-width: 405px;
+    & > .h2 {
+      margin-bottom: 15px;
+    }
+    & > .p1-body {
+      margin-bottom: 15px;
+      opacity: 0.7;
+    }
+    &__link {
+      color: $royalBlue;
+      position: relative;
+      z-index: 1;
+      &:hover {
+        color: $royalBlue;
+        text-shadow: 0px 0px 8px $tintBlue;
+        transition: 0.2s ease;
+      }
+    }
+    &__obj {
+      position: relative;
+      z-index: -1;
+      margin-left: 15px;
+    }
+  }
+  &-list {
+    max-width: 660px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    &__box {
+      max-width: 305px;
+      & > .h5 {
+        margin-bottom: 10px;
+      }
+    }
+    &__obj {
+      margin-bottom: 15px;
+    }
+  }
+}

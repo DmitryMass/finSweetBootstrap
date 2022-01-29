@@ -1,0 +1,17 @@
+.sectionfive {
+  min-height: 800px;
+  padding: 130px 0;
+  &-ask {
+    max-width: 330px;
+    & > .h3 {
+      margin-bottom: 15px;
+    }
+    & > .label-one {
+      color: $royalBlue;
+    }
+  }
+  &-accordion {
+    max-width: 845px;
+    width: 100%;
+  }
+}

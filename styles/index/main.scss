@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import "../var";
+@import "../global";
+@import "../bootstrapStyle/main";
+@import "../header";
+@import "./main";
+@import "./sectionfirst";
+@import "./sectionsecond";
+@import "./sectionthird";
+@import "./sectionfour";
+@import "./sectionfive";
+@import "../footer";
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0 !important;
+}
+* {
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+li {
+  list-style: none;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin: 0;
+  padding: 0;
+}
+.main-wrap {
+  min-height: calc(100vh - 92px);
+}
+// MIXINS
+.container {
+  width: auto;
+}
+@mixin container($width) {
+  max-width: $width;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
+}
+
+.container {
+  @include container(1280px);
+}
+// FlexContainer
+.flex-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flex-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.slider-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.accordion-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+// keyframes
+
+// mediaquerry

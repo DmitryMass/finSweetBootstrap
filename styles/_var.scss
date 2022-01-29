@@ -1,0 +1,121 @@
+// colors
+$white: #ffffff;
+$black: black;
+$royalBlue: #2405f2;
+$grey: #f4f6fc;
+$darkBlue: #282938;
+$yellow: #fcd980;
+$tintBlue: #1c1e53;
+$accent: #eef4fa;
+$lightYellow: #fcd9801a;
+$lightGold: #fde4a6;
+$darkGrey: #535460;
+$whiteGrey: #bbbbcb;
+//  Background
+
+$linearDark: linear-gradient(
+  329.39deg,
+  #1c1e53 -10.96%,
+  rgba(28, 30, 83, 0.42) 103.96%
+);
+// selector
+.h1 {
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 74px;
+  color: $black;
+}
+.h2 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  color: $black;
+}
+.h3 {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 56px;
+  color: $black;
+}
+.h4 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 56px;
+  color: $black;
+}
+.h5 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  color: $black;
+}
+.h6 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: $black;
+}
+.p1-body {
+  font-size: 16px;
+  line-height: 28px;
+  color: $black;
+}
+.p2-body {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: $black;
+}
+.p3-body {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 28px;
+  color: $darkBlue;
+}
+.label-one {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: $black;
+}
+.label-two {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: $black;
+}
+// BUTTON + LABEL ONE
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  background: $yellow;
+  color: $black;
+  border: none;
+  &:hover {
+    background: $lightGold;
+  }
+}
+.button-black {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  background: $darkGrey;
+  color: $white;
+  border: none;
+  &:hover {
+    background: $darkBlue;
+  }
+}
+
+.icons {
+  width: 20px;
+  height: 20px;
+}
+.icon-facebook {
+  &:hover {
+    color: blue;
+  }
+}

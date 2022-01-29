@@ -1,0 +1,74 @@
+.section {
+  background-color: $tintBlue;
+  min-height: 397px;
+  margin-top: 130px;
+  &-main {
+    padding-top: 100px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 145px;
+  }
+  &-logo {
+    &__link {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      margin-bottom: 20px;
+    }
+    &__obj {
+      position: relative;
+      z-index: -1;
+      width: 158px;
+      height: 40px;
+    }
+  }
+  &-txt {
+    max-width: 400px;
+    color: $white;
+    opacity: 0.8;
+    margin-bottom: 86px;
+  }
+  &-contact {
+    max-width: 517px;
+    min-height: 95px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;
+    gap: 30px;
+    flex-wrap: wrap;
+    background-color: $yellow;
+  }
+  &-network {
+    max-width: 400px;
+    &__txt {
+      color: $grey;
+      opacity: 0.8;
+      margin-bottom: 30px;
+    }
+    & > .h2 {
+      color: $white;
+      margin-bottom: 15px;
+    }
+  }
+  &-icon {
+    display: inline-block;
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover > .icon-facebook {
+      color: blue;
+    }
+    &:hover > .icon-twitter {
+      color: cyan;
+    }
+    &:hover > .icon-insta {
+      color: red;
+    }
+    &:hover > .icon-linkdn {
+      color: rgb(28, 134, 255);
+    }
+  }
+}

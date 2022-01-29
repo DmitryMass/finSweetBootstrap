@@ -1,0 +1,12 @@
+{
+  "name": "finsweetbtstrp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "rug-pug": "pug --pretty --watch index.pug"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
