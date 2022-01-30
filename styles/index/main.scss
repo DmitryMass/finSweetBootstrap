@@ -102,7 +102,6 @@ li {
 .sectionsix-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
 // keyframes
 
@@ -153,6 +152,8 @@ li {
   .slider-flex {
     justify-content: center;
   }
+
+  // SECTION SIX (FIRST PAGE )
 }
 
 ///////////////////////////////////
@@ -194,6 +195,15 @@ li {
   }
   .accordion-flex {
     justify-content: center;
+  }
+  .sectionsix {
+    &-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    &-bgc {
+      max-width: 625px;
+    }
   }
 }
 @media screen and (max-width: 992px) {
@@ -355,6 +365,21 @@ li {
       }
     }
   }
+
+  //  SECTION SIX (FIRST PAGE)
+
+  .sectionsix {
+    &-bgc,
+    &-form {
+      max-width: 550px;
+    }
+    &-bgc {
+      & > .h1 {
+        font-size: 42px;
+        line-height: 54px;
+      }
+    }
+  }
 }
 
 ////////////////////////////////////// /////////////////
@@ -490,6 +515,49 @@ li {
       }
       & > .label-one {
         font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  // SECTION SIX (FIRST PAGE)
+
+  .sectionsix {
+    padding: 30px 0;
+    &-bgc,
+    &-form {
+      max-width: 400px;
+      min-height: 400px;
+    }
+    &-bgc {
+      padding: 45px;
+
+      & > .h1 {
+        font-size: 32px;
+        line-height: 46px;
+      }
+      & > .p2-body {
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+    &-block {
+      padding-top: 45px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &-button {
+      width: 250px;
+    }
+    &-title {
+      padding: 20px;
+      & > .h5 {
+        font-size: 18px;
+        line-height: 26px;
+      }
+      & > .label-two {
+        font-size: 14px;
         line-height: 24px;
       }
     }
