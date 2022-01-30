@@ -106,7 +106,9 @@
       }
     }
   }
-
+  &-block2 {
+    box-shadow: 0 0 4px $tintBlue;
+  }
   &-block,
   &-block2 {
     & > img {

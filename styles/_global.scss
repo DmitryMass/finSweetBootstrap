@@ -1,7 +1,6 @@
 .section {
   background-color: $tintBlue;
   min-height: 397px;
-  margin-top: 130px;
   &-main {
     padding-top: 100px;
     display: flex;
@@ -69,6 +68,51 @@
     }
     &:hover > .icon-linkdn {
       color: rgb(28, 134, 255);
+    }
+  }
+}
+
+// MEDIA
+
+@media screen and (max-width: 1400px) {
+}
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 992px) {
+  .section {
+    padding-bottom: 60px;
+    &-main {
+      padding-top: 60px;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .section {
+    padding-bottom: 30px;
+    &-main {
+      padding-top: 30px;
+    }
+    &-logo {
+      &__obj {
+        width: 110px;
+      }
+    }
+    &-txt {
+      margin-bottom: 0;
+      padding-bottom: 30px;
+    }
+    &-network {
+      & > .h2 {
+        font-size: 32px;
+        line-height: 46px;
+      }
+      & > .p1-body {
+        font-size: 14px;
+        line-height: 24px;
+      }
     }
   }
 }

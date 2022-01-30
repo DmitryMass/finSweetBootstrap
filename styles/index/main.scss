@@ -222,6 +222,18 @@ li {
       max-width: 590px;
     }
   }
+
+  // SECTION SEVEN (FIRST PAGE)
+  .sectionseven {
+    padding-bottom: 60px;
+    &-title {
+      & > .h2 {
+        font-size: 32px;
+        line-height: 48px;
+        text-align: center;
+      }
+    }
+  }
 }
 
 ///////////////////////////////////////////////
@@ -454,6 +466,14 @@ li {
         }
       }
     }
+    &-list {
+      padding-left: 30px;
+    }
+    &-block {
+      &__list {
+        padding-left: 30px;
+      }
+    }
   }
 
   //  SECTION THIRD (FIRST PAGE)
@@ -559,6 +579,27 @@ li {
       & > .label-two {
         font-size: 14px;
         line-height: 24px;
+      }
+    }
+  }
+
+  // SECTION SEVEN (FIRST PAGE)
+  .sectionseven {
+    padding-bottom: 30px;
+    &-title {
+      padding-bottom: 20px;
+    }
+    &-box {
+      &__item {
+        max-width: 350px;
+        & > .h6 {
+          font-size: 18px;
+          line-height: 26px;
+        }
+        & > .p1-body {
+          font-size: 14px;
+          line-height: 24px;
+        }
       }
     }
   }

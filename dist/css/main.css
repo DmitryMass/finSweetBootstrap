@@ -115,7 +115,6 @@
 .section {
   background-color: #1c1e53;
   min-height: 397px;
-  margin-top: 130px;
 }
 
 .section-main {
@@ -197,6 +196,42 @@
 
 .section-icon:hover > .icon-linkdn {
   color: #1c86ff;
+}
+
+@media screen and (max-width: 992px) {
+  .section {
+    padding-bottom: 60px;
+  }
+  .section-main {
+    padding-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .section {
+    padding-bottom: 30px;
+  }
+  .section-main {
+    padding-top: 30px;
+  }
+  .section-logo__obj {
+    width: 110px;
+  }
+  .section-txt {
+    margin-bottom: 0;
+    padding-bottom: 30px;
+  }
+  .section-network > .h2 {
+    font-size: 32px;
+    line-height: 46px;
+  }
+  .section-network > .p1-body {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .navbar-toggler:focus {
@@ -565,6 +600,10 @@
   margin-bottom: 10px;
 }
 
+.sectionsecond-block2 {
+  box-shadow: 0 0 4px #1c1e53;
+}
+
 .sectionsecond-block > img, .sectionsecond-block2 > img {
   width: 100%;
 }
@@ -878,6 +917,10 @@ span.accordion-span {
   margin-bottom: 45px;
 }
 
+.sectionseven {
+  padding-bottom: 130px;
+}
+
 .sectionseven-title {
   padding-bottom: 65px;
 }
@@ -932,6 +975,16 @@ span.accordion-span {
   transition: 0.3s ease;
   color: #282938;
   text-shadow: 1px 2px 8px #1c1e53;
+}
+
+@media screen and (max-width: 992px) {
+  .footer-nav {
+    display: none;
+  }
+  .footer-logo {
+    text-align: center;
+    width: 100%;
+  }
 }
 
 html,
@@ -1106,6 +1159,14 @@ li {
   .sectionfour-slider {
     max-width: 590px;
   }
+  .sectionseven {
+    padding-bottom: 60px;
+  }
+  .sectionseven-title > .h2 {
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1274,6 +1335,12 @@ li {
   .sectionsecond-block2__link > img {
     width: 100%;
   }
+  .sectionsecond-list {
+    padding-left: 30px;
+  }
+  .sectionsecond-block__list {
+    padding-left: 30px;
+  }
   .sectionthird {
     padding: 30px 0px;
   }
@@ -1350,6 +1417,23 @@ li {
     line-height: 26px;
   }
   .sectionsix-title > .label-two {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .sectionseven {
+    padding-bottom: 30px;
+  }
+  .sectionseven-title {
+    padding-bottom: 20px;
+  }
+  .sectionseven-box__item {
+    max-width: 350px;
+  }
+  .sectionseven-box__item > .h6 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .sectionseven-box__item > .p1-body {
     font-size: 14px;
     line-height: 24px;
   }
