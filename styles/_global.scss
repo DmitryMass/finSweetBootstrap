@@ -114,5 +114,9 @@
         line-height: 24px;
       }
     }
+    &-contact {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 }
