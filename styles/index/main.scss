@@ -141,7 +141,22 @@ li {
       }
     }
   }
+
+  // SECTION FOUR (FIRST PAGE)
+
+  .sectionfour {
+    &-reviews {
+      max-width: none;
+      padding-bottom: 40px;
+    }
+  }
+  .slider-flex {
+    justify-content: center;
+  }
 }
+
+///////////////////////////////////
+
 @media screen and (max-width: 1200px) {
   //  SECTION FIRST (MAIN PAGE)
   .sectionfirst {
@@ -166,6 +181,20 @@ li {
       }
     }
   }
+
+  // SECTION FIVE (FIRST PAGE)
+
+  .sectionfive {
+    padding: 60px 0px;
+    &-ask {
+      max-width: 612px;
+      width: 100%;
+      padding-bottom: 15px;
+    }
+  }
+  .accordion-flex {
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 992px) {
   // HEADER  BURGER MENU
@@ -177,8 +206,16 @@ li {
       display: none;
     }
   }
-  //  SECTION FIRST ( MAIN PAGE )
+  //  SECTION FOUR (FIRST PAGE )
+  .sectionfour {
+    &-slider {
+      max-width: 590px;
+    }
+  }
 }
+
+///////////////////////////////////////////////
+
 @media screen and (max-width: 768px) {
   .main {
     padding-top: 40px;
@@ -211,6 +248,7 @@ li {
   // SECTION SECOND (FIRST PAGE )
 
   .sectionsecond {
+    padding: 60px 0px;
     &-box1 {
       & > img {
         width: 414px;
@@ -252,8 +290,74 @@ li {
       }
     }
   }
+
+  // SECTION THIRD (FIRST PAGE )
+
+  .sectionthird {
+    padding: 60px 0px;
+    &-title {
+      & > .h2 {
+        font-size: 32px;
+        line-height: 46px;
+      }
+    }
+  }
+
+  //  SECTION FOUR (FIRST PAGE )
+
+  .sectionfour {
+    padding: 60px 0;
+    &-reviews {
+      & > .h3 {
+        font-size: 30px;
+        line-height: 42px;
+      }
+    }
+  }
+  .carousel {
+    &-inner {
+      min-height: auto;
+    }
+    &-item {
+      & > .h5 {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+  }
+
+  // SECTION FIVE (FIRST PAGE)
+
+  .sectionfive {
+    padding: 30px 0px;
+    &-ask {
+      max-width: 612px;
+      width: 100%;
+      padding-bottom: 10px;
+      & > .h3 {
+        font-size: 28px;
+        line-height: 38px;
+      }
+    }
+  }
+  span.accordion-span {
+    margin-right: 30px;
+  }
+  button.h6 {
+    font-size: 18px;
+  }
+  .accordion {
+    &-body {
+      padding: 1rem 1.25rem;
+      & > .label-one {
+        font-size: 16px;
+        line-height: 28px;
+      }
+    }
+  }
 }
-// MAIN SECTION
+
+////////////////////////////////////// /////////////////
 
 @media screen and (max-width: 576px) {
   // MAIN SECTION
@@ -295,6 +399,7 @@ li {
   //  SECTION SECOND (FIRST PAGE )
 
   .sectionsecond {
+    padding: 30px 0px;
     &-title {
       & > .h2 {
         font-size: 24px;
@@ -322,6 +427,70 @@ li {
         & > img {
           width: 100%;
         }
+      }
+    }
+  }
+
+  //  SECTION THIRD (FIRST PAGE)
+
+  .sectionthird {
+    padding: 30px 0px;
+    &-title {
+      & > .h2 {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+    &-box {
+      & > .h6 {
+        font-size: 18px;
+        line-height: 26px;
+      }
+      & > .p1-body {
+        font-size: 14px;
+        line-height: 26px;
+      }
+    }
+  }
+
+  // SECTION FOUR (FIRST PAGE )
+
+  .sectionfour {
+    padding: 30px 0;
+    &-reviews {
+      & > .h3 {
+        font-size: 24px;
+        line-height: 36px;
+      }
+      & > .p1-body {
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+  }
+  .carousel {
+    &-inner {
+      min-height: auto;
+    }
+    &-item {
+      & > .h5 {
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  // SECTION FIVE (FIRST PAGE)
+
+  .sectionfive {
+    &-ask {
+      & > .h3 {
+        font-size: 24px;
+        line-height: 36px;
+      }
+      & > .label-one {
+        font-size: 16px;
+        line-height: 24px;
       }
     }
   }
