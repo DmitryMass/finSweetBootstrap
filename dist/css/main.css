@@ -443,7 +443,7 @@
 }
 
 .sectionsecond {
-  padding-top: 120px;
+  padding: 120px 0;
 }
 
 .sectionsecond-title {
@@ -480,6 +480,12 @@
 
 .sectionsecond-box1 > img {
   width: 100%;
+}
+
+.sectionsecond-box2 {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 .sectionsecond-list {
@@ -525,10 +531,6 @@
   position: relative;
   z-index: -1;
   margin-left: 15px;
-}
-
-.sectionsecond-block {
-  margin-bottom: 26px;
 }
 
 .sectionsecond-block:hover .sectionsecond-block__list {
@@ -1042,12 +1044,31 @@ li {
   .sectionfirst {
     padding: 60px 0;
   }
+  .sectionsecond-title {
+    justify-content: space-around;
+  }
+  .sectionsecond-box2 {
+    flex-direction: row;
+  }
+  .container > .flex-wrap:last-child {
+    justify-content: center;
+    gap: 20px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
   .sectionfirst > .flex-container {
     gap: 30px;
     justify-content: center;
+  }
+  .sectionfirst-title {
+    max-width: none;
+  }
+  .sectionsecond-list {
+    transform: none;
+  }
+  .sectionsecond-block__list {
+    transform: none;
   }
 }
 
@@ -1080,9 +1101,44 @@ li {
     justify-content: center;
     gap: 20px;
   }
+  .sectionfirst-title {
+    max-width: 320px;
+  }
   .sectionfirst-title > .h2 {
     font-size: 42px;
     line-height: 54px;
+  }
+  .sectionsecond-box1 > img {
+    width: 414px;
+    height: 284px;
+  }
+  .sectionsecond-box2 {
+    flex-direction: column;
+  }
+  .sectionsecond-list {
+    max-width: none;
+  }
+  .sectionsecond-list > .h6 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .sectionsecond-list > .p2-body {
+    font-size: 14px;
+    line-height: 26px;
+    padding-bottom: 20px;
+  }
+  .sectionsecond-block__list > .h6 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .sectionsecond-block__list > .p2-body {
+    font-size: 14px;
+    line-height: 26px;
+    padding-bottom: 20px;
+  }
+  .sectionsecond-title > .h2 {
+    font-size: 34px;
+    line-height: 48px;
   }
 }
 
@@ -1113,6 +1169,24 @@ li {
   .sectionfirst-list__box > .h5 {
     font-size: 26px;
     line-height: 38px;
+  }
+  .sectionsecond-title > .h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .sectionsecond-box1 > img {
+    width: 350px;
+    height: 220px;
+  }
+  .sectionsecond-box2 {
+    max-width: 350px;
+  }
+  .sectionsecond-block > img, .sectionsecond-block2 > img {
+    width: 350px;
+    height: 220px;
+  }
+  .sectionsecond-block2__link > img {
+    width: 100%;
   }
 }
 
