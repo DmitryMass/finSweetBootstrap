@@ -1,0 +1,43 @@
+.sectionben {
+  padding: 130px 0;
+  &-title {
+    text-align: center;
+    & > .h2 {
+      display: inline-block;
+      max-width: 630px;
+      padding-bottom: 50px;
+    }
+  }
+  &-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    &__item {
+      max-width: 405px;
+      background: $grey;
+      min-height: 316px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 0px 33px 0px 48px;
+      & > object {
+        padding-bottom: 25px;
+      }
+      & > .h6 {
+        padding-bottom: 12px;
+      }
+      & > .p1-body {
+        opacity: 0.7;
+      }
+    }
+  }
+  &-users {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,13 @@
+section.sectionproc
+    .container 
+        .sectionproc-title 
+            h2.h2 The process we follow
+        .sectionproc-box.row 
+            each processVar in processItem
+                .sectionproc-box__item.col-12.col-sm-6.col-md-3
+                    .item
+                        .item-circle
+                        .item-dashed
+                    .item-block 
+                        h6.h6=processVar.title
+                        p.p1-body=processVar.subtitle

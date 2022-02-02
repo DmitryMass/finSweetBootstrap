@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "rug-pug": "pug --pretty --watch index.pug"
+    "rug-pug": "pug --pretty --watch index.pug",
+    "rug-about": "pug --pretty --watch ./pug/pugMainPages/aboutUs.pug"
   },
   "keywords": [],
   "author": "",

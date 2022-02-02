@@ -1,0 +1,11 @@
+section.sectionabout 
+    .container 
+        .sectionabout-us
+            each whoVar in whoItem 
+                .sectionabout-who__item 
+                    h2.label-two=whoVar.title
+                    h3.h3=whoVar.subtitle
+                    p.p1-body=whoVar.txt
+        .sectionabout-picture 
+            img.sectionabout-img(src="../../assets/images/whoweare.png", alt="")
+            

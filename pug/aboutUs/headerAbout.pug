@@ -1,8 +1,8 @@
 header.header 
     .container.flex-wrap
         .header-logo 
-            a.header-logo__link(href="./index.html") 
-                object.header-logo__obj(data="./assets/icons/headerlogo.svg", type="") 
+            a.header-logo__link(href="#") 
+                object.header-logo__obj(data="../../assets/icons/headerlogo.svg", type="") 
         .header-nav 
             ul.header-list.flex-container
                 each headerLink in linkVar
@@ -25,4 +25,3 @@ header.header
                                 a.nav-link(href=headerLink.link)=headerLink.title
                         button(type='button').header-btn
                             a.header-btn__link(href="#") Contact us
-

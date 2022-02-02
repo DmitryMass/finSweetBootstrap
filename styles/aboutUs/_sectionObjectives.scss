@@ -1,0 +1,29 @@
+.sectionobj {
+  padding: 130px 0px;
+  background: $accent;
+  &-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    &:first-child {
+      padding-bottom: 95px;
+    }
+    &__item {
+      max-width: 625px;
+    }
+    &__img {
+      & > img {
+        width: 100%;
+      }
+    }
+  }
+}
+.item {
+  &-title {
+    padding-bottom: 15px;
+  }
+  &-subtitle {
+    padding-bottom: 15px;
+  }
+}

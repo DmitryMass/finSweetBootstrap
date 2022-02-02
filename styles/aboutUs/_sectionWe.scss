@@ -1,0 +1,29 @@
+.sectionabout {
+  padding-bottom: 130px;
+  &-us {
+    min-height: 375px;
+    background: $ashenWhite;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &-who {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    &__item {
+      max-width: 515px;
+      &:last-child {
+        padding-top: 25px;
+      }
+      & > .h3 {
+        padding-bottom: 15px;
+      }
+    }
+  }
+  &-img {
+    width: 100%;
+  }
+}

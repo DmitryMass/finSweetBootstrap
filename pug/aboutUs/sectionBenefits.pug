@@ -1,0 +1,16 @@
+section.sectionben 
+    .container 
+        .sectionben-title 
+            h2.h2 The benefits of working with us
+        .sectionben-box
+            each benVar in benefitsItem
+                .sectionben-box__item 
+                    object(data=benVar.obj, type="")
+                    h6.h6=benVar.title
+                    p.p1-body=benVar.txt
+        .sectionben-users 
+            .sectionben-users__item 
+                h3.h3 100.000+
+                p.p1-body Finsweet Users
+            each objVar in objectItem
+                object(data=objVar.obj, type="") 
