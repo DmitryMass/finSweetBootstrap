@@ -3,52 +3,18 @@ section.sectionteam
         .sectionteam-title 
             h2.h2 Meet our team
         .sectionteam-box
-            .sectionteam-box__item
-                .item-block__img
-                .item-block__gradient
-                    a.item-block__href(href="#") 
-                        ion-icon.icons.facebook(name='logo-facebook')
-                    a.item-block__href(href="#") 
-                        ion-icon.icons.twitter(name='logo-twitter')
-                    a.item-block__href(href="#") 
-                        ion-icon.icons.linkedn(name='logo-linkedin')
-                .item-block__info
-                    h6.h6 John Smith
-                    p.p1-body CEO
-            .sectionteam-box__item
-                .item-block__img
-                .item-block__gradient
-                    a.item-block__href(href="#") 
-                        ion-icon.icons.facebook(name='logo-facebook')
-                    a.item-block__href(href="#") 
-                        ion-icon.icons.twitter(name='logo-twitter')
-                    a.item-block__href(href="#") 
-                        ion-icon.icons.linkedn(name='logo-linkedin')
-                .item-block__info
-                    h6.h6 John Smith
-                    p.p1-body CEO
-            .sectionteam-box__item
-                .item-block__img
-                .item-block__gradient
-                    a.item-block__href(href="#") 
-                        ion-icon.icons.facebook(name='logo-facebook')
-                    a.item-block__href(href="#") 
-                        ion-icon.icons.twitter(name='logo-twitter')
-                    a.item-block__href(href="#") 
-                        ion-icon.icons.linkedn(name='logo-linkedin')
-                .item-block__info
-                    h6.h6 John Smith
-                    p.p1-body CEO
-            .sectionteam-box__item
-                .item-block__img
-                .item-block__gradient
-                    a.item-block__href(href="#") 
-                        ion-icon.icons.facebook(name='logo-facebook')
-                    a.item-block__href(href="#") 
-                        ion-icon.icons.twitter(name='logo-twitter')
-                    a.item-block__href(href="#") 
-                        ion-icon.icons.linkedn(name='logo-linkedin')
-                .item-block__info
-                    h6.h6 John Smith
-                    p.p1-body CEO
+            each teamVar in teamItem 
+                .sectionteam-box__item
+                    .item-block__img
+                    .item-block__gradient
+                        a.item-block__href(href=teamVar.linkFacebook)
+                            ion-icon.icons.facebook(name=teamVar.iconFacebook)
+                        a.item-block__href(href=teamVar.linkTwitter) 
+                            ion-icon.icons.twitter(name=teamVar.iconTwitter)
+                        a.item-block__href(href=teamVar.linkLinkedn) 
+                            ion-icon.icons.linkedn(name=teamVar.iconLinkedn)
+                    .item-block__info
+                        h6.h6=teamVar.person
+                        p.p1-body=teamVar.line
+
 
