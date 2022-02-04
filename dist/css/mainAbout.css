@@ -312,10 +312,9 @@
 }
 
 .sectionteam-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  gap: 20px;
 }
 
 .sectionteam-box__item {
@@ -326,7 +325,15 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  padding: 48px 64px 34px 64px;
+  padding: 50px 0;
+}
+
+.sectionteam-box__item:hover .item-block__gradient {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  color: #ffffff;
+  background: linear-gradient(348.37deg, #5239fa 1.97%, rgba(255, 255, 255, 0) 61.2%);
 }
 
 .item-block__img {
@@ -336,7 +343,7 @@
   background-position: center;
   width: 168px;
   height: 168px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .item-block__gradient {
@@ -345,15 +352,21 @@
   height: 168px;
   border-radius: 50%;
   background: transparent;
-  top: 48px;
-}
-
-.item-block__gradient:hover {
-  background: linear-gradient(348.37deg, #5239fa 1.97%, rgba(255, 255, 255, 0) 61.2%);
+  top: 51px;
+  display: none;
+  padding-bottom: 15px;
 }
 
 .item-block__info {
   text-align: center;
+}
+
+.item-block__href {
+  margin: 0 5px;
+}
+
+.item-block__href:hover .icons {
+  color: #ffffff;
 }
 
 .section {
@@ -538,6 +551,13 @@
   .sectionben-object > object {
     padding: 10px;
   }
+  .sectionteam {
+    padding: 60px 0;
+  }
+  .sectionteam-title {
+    padding-bottom: 30px;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -564,6 +584,9 @@
     flex-direction: column;
     gap: 10px;
   }
+  .sectionteam-box {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -573,7 +596,7 @@
   .sectionproc-title > .h2 {
     font-size: 34px;
   }
-  .row {
+  .row-appeal > .row {
     justify-content: center;
     gap: 20px;
   }
@@ -586,6 +609,9 @@
     font-size: 34px;
     line-height: 46px;
     padding-bottom: 25px;
+  }
+  .item-block__info > .h6 {
+    font-size: 20px;
   }
 }
 
@@ -652,5 +678,15 @@
     font-size: 28px;
     line-height: 46px;
     padding-bottom: 25px;
+  }
+  .sectionteam {
+    padding: 30px 0;
+  }
+  .sectionteam-box {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+  }
+  .sectionteam-title > .h2 {
+    font-size: 34px;
+    line-height: 46px;
   }
 }

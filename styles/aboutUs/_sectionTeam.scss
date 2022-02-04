@@ -2,10 +2,9 @@
   padding: 130px 0;
   background: $grey;
   &-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 20px;
     &__item {
       position: relative;
       background: $white;
@@ -14,7 +13,18 @@
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      padding: 48px 64px 34px 64px;
+      padding: 50px 0;
+      &:hover .item-block__gradient {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        color: $white;
+        background: linear-gradient(
+          348.37deg,
+          #5239fa 1.97%,
+          rgba(255, 255, 255, 0) 61.2%
+        );
+      }
     }
   }
 }
@@ -28,7 +38,7 @@
       background-position: center;
       width: 168px;
       height: 168px;
-      margin-bottom: 30px;
+      margin-bottom: 10px;
     }
     &__gradient {
       position: absolute;
@@ -36,17 +46,18 @@
       height: 168px;
       border-radius: 50%;
       background: transparent;
-      top: 48px;
-      &:hover {
-        background: linear-gradient(
-          348.37deg,
-          #5239fa 1.97%,
-          rgba(255, 255, 255, 0) 61.2%
-        );
-      }
+      top: 51px;
+      display: none;
+      padding-bottom: 15px;
     }
     &__info {
       text-align: center;
+    }
+    &__href {
+      margin: 0 5px;
+      &:hover .icons {
+        color: $white;
+      }
     }
   }
 }

@@ -91,6 +91,16 @@
       }
     }
   }
+
+  // SECTIOM TEAM (6)
+
+  .sectionteam {
+    padding: 60px 0;
+    &-title {
+      padding-bottom: 30px;
+      text-align: center;
+    }
+  }
 }
 
 //////////////////////
@@ -132,6 +142,13 @@
       gap: 10px;
     }
   }
+
+  // SECTION TEAM (6)
+  .sectionteam {
+    &-box {
+      grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+  }
 }
 
 ///////////////////////
@@ -147,9 +164,11 @@
       }
     }
   }
-  .row {
-    justify-content: center;
-    gap: 20px;
+  .row-appeal {
+    & > .row {
+      justify-content: center;
+      gap: 20px;
+    }
   }
 
   // SECTION OBJ (4)
@@ -169,6 +188,17 @@
         font-size: 34px;
         line-height: 46px;
         padding-bottom: 25px;
+      }
+    }
+  }
+
+  // SECTION TEAM (6)
+  .item {
+    &-block {
+      &__info {
+        & > .h6 {
+          font-size: 20px;
+        }
       }
     }
   }
@@ -267,6 +297,21 @@
         font-size: 28px;
         line-height: 46px;
         padding-bottom: 25px;
+      }
+    }
+  }
+
+  // SECTION TEAM ( 6)
+
+  .sectionteam {
+    padding: 30px 0;
+    &-box {
+      grid-template-columns: repeat(1, minmax(200px, 1fr));
+    }
+    &-title {
+      & > .h2 {
+        font-size: 34px;
+        line-height: 46px;
       }
     }
   }
