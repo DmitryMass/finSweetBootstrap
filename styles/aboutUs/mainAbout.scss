@@ -1,7 +1,6 @@
 @import "../var";
 @import "./mainAboutUs";
 @import "./sectionAbout";
-@import "./sectionWe";
 @import "./sectionProcess";
 @import "./sectionObjectives";
 @import "./_sectionBenefits.scss";
@@ -13,3 +12,262 @@
 
 // MEDIA
 // KEYFRAMES
+
+@media screen and (max-width: 1200px) {
+  //  MAIN SECTION
+  .main {
+    padding: 60px 0px;
+    & > .flex-wrap {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  // SECTION ABOUTUS
+
+  .sectionabout {
+    padding-bottom: 60px;
+    &-us {
+      gap: 20px;
+      padding: 25px;
+      flex-wrap: nowrap;
+    }
+    &-who {
+      &__item {
+        & > .h3 {
+          font-size: 34px;
+        }
+      }
+    }
+  }
+
+  // SECTION PROC (3)
+
+  .sectionproc {
+    padding-bottom: 60px;
+  }
+
+  // SECTION OBJ (4)
+
+  .sectionobj {
+    padding: 60px;
+    &-box {
+      &:first-child {
+        padding-bottom: 50px;
+        flex-direction: column;
+      }
+      &:last-child {
+        flex-direction: column-reverse;
+      }
+      &__item {
+        text-align: center;
+        padding-bottom: 15px;
+      }
+    }
+  }
+  .item {
+    &-title {
+      padding: 0;
+    }
+  }
+
+  // SECTION BENefits (5)
+  .sectionben {
+    padding: 60px 0;
+    &-box {
+      flex-wrap: wrap;
+      justify-content: center;
+      &__item {
+        max-width: 450px;
+      }
+    }
+    &-users {
+      flex-direction: column;
+      align-items: center;
+    }
+    &-object {
+      & > object {
+        padding: 10px;
+      }
+    }
+  }
+}
+
+//////////////////////
+
+@media screen and (max-width: 992px) {
+  // Main SECTION
+  .main {
+    &-aboutUs {
+      & > .h1 {
+        font-size: 46px;
+        line-height: 68px;
+      }
+    }
+  }
+
+  // SECTION ABOUT
+
+  .sectionabout {
+    &-us {
+      gap: 0px;
+      padding: 30px;
+      flex-wrap: wrap;
+    }
+  }
+
+  // SECTION BENEfits (5)
+
+  .sectionben {
+    padding: 60px 0;
+    &-box {
+      flex-direction: column;
+      &__item {
+        max-width: 450px;
+      }
+    }
+    &-object {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}
+
+///////////////////////
+
+@media screen and (max-width: 768px) {
+  // SECTION PROC (3)
+
+  .sectionproc {
+    &-title {
+      padding-bottom: 25px;
+      & > .h2 {
+        font-size: 34px;
+      }
+    }
+  }
+  .row {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  // SECTION OBJ (4)
+
+  .item {
+    &-subtitle {
+      font-size: 34px;
+      line-height: 46px;
+      padding-bottom: 10px;
+    }
+  }
+
+  // SECTION BENefits (5)
+  .sectionben {
+    &-title {
+      & > .h2 {
+        font-size: 34px;
+        line-height: 46px;
+        padding-bottom: 25px;
+      }
+    }
+  }
+}
+
+///////////////////////////
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  // main SECTION
+
+  .main {
+    padding: 30px 0;
+    &-aboutUs {
+      & > .h1 {
+        font-size: 38px;
+        line-height: 48px;
+        padding-bottom: 15px;
+      }
+    }
+  }
+
+  // SECTION ABOUT
+
+  .sectionabout {
+    padding-bottom: 30px;
+    &-us {
+      gap: 0px;
+      padding: 15px;
+    }
+    &-who {
+      &__item {
+        & > .h3 {
+          font-size: 28px;
+          line-height: 46px;
+        }
+        & > .label-two {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  // SECTION PROC (3)
+
+  .sectionproc {
+    padding-bottom: 30px;
+    &-title {
+      padding-bottom: 25px;
+      & > .h2 {
+        font-size: 28px;
+        line-height: 46px;
+      }
+    }
+    &-box {
+      &__item {
+        max-width: 400px;
+      }
+    }
+  }
+
+  // SECTION OBJ (4)
+
+  .sectionobj {
+    padding: 30px;
+    &-box {
+      &:first-child {
+        padding-bottom: 25px;
+        flex-direction: column;
+      }
+      &__item {
+        text-align: left;
+      }
+    }
+  }
+  .item {
+    &-subtitle {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+
+  // SECTION BENefits (5)
+  .sectionben {
+    padding: 30px 0;
+    &-box {
+      &__item {
+        padding: 0 30px;
+      }
+    }
+    &-title {
+      & > .h2 {
+        font-size: 28px;
+        line-height: 46px;
+        padding-bottom: 25px;
+      }
+    }
+  }
+}

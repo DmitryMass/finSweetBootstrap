@@ -1,0 +1,52 @@
+.sectionteam {
+  padding: 130px 0;
+  background: $grey;
+  &-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__item {
+      position: relative;
+      background: $white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      padding: 48px 64px 34px 64px;
+    }
+  }
+}
+
+.item {
+  &-block {
+    &__img {
+      background-image: url(../../assets/images/teamSecond.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 168px;
+      height: 168px;
+      margin-bottom: 30px;
+    }
+    &__gradient {
+      position: absolute;
+      width: 168px;
+      height: 168px;
+      border-radius: 50%;
+      background: transparent;
+      top: 48px;
+      &:hover {
+        background: linear-gradient(
+          348.37deg,
+          #5239fa 1.97%,
+          rgba(255, 255, 255, 0) 61.2%
+        );
+      }
+    }
+    &__info {
+      text-align: center;
+    }
+  }
+}

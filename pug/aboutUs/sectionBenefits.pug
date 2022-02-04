@@ -12,5 +12,6 @@ section.sectionben
             .sectionben-users__item 
                 h3.h3 100.000+
                 p.p1-body Finsweet Users
-            each objVar in objectItem
-                object(data=objVar.obj, type="") 
+            .sectionben-object
+                each objVar in objectItem
+                    object.sectionben-object__item(data=objVar.obj, type="") 

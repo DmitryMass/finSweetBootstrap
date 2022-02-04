@@ -268,7 +268,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  gap: 20px;
   padding-bottom: 50px;
 }
 
@@ -300,6 +300,60 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.sectionben-object__item {
+  padding: 25px;
+}
+
+.sectionteam {
+  padding: 130px 0;
+  background: #f4f6fc;
+}
+
+.sectionteam-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.sectionteam-box__item {
+  position: relative;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 48px 64px 34px 64px;
+}
+
+.item-block__img {
+  background-image: url(../../assets/images/teamSecond.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 168px;
+  height: 168px;
+  margin-bottom: 30px;
+}
+
+.item-block__gradient {
+  position: absolute;
+  width: 168px;
+  height: 168px;
+  border-radius: 50%;
+  background: transparent;
+  top: 48px;
+}
+
+.item-block__gradient:hover {
+  background: linear-gradient(348.37deg, #5239fa 1.97%, rgba(255, 255, 255, 0) 61.2%);
+}
+
+.item-block__info {
+  text-align: center;
 }
 
 .section {
@@ -425,5 +479,178 @@
   .section-contact {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main {
+    padding: 60px 0px;
+  }
+  .main > .flex-wrap {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .sectionabout {
+    padding-bottom: 60px;
+  }
+  .sectionabout-us {
+    gap: 20px;
+    padding: 25px;
+    flex-wrap: nowrap;
+  }
+  .sectionabout-who__item > .h3 {
+    font-size: 34px;
+  }
+  .sectionproc {
+    padding-bottom: 60px;
+  }
+  .sectionobj {
+    padding: 60px;
+  }
+  .sectionobj-box:first-child {
+    padding-bottom: 50px;
+    flex-direction: column;
+  }
+  .sectionobj-box:last-child {
+    flex-direction: column-reverse;
+  }
+  .sectionobj-box__item {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  .item-title {
+    padding: 0;
+  }
+  .sectionben {
+    padding: 60px 0;
+  }
+  .sectionben-box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .sectionben-box__item {
+    max-width: 450px;
+  }
+  .sectionben-users {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sectionben-object > object {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .main-aboutUs > .h1 {
+    font-size: 46px;
+    line-height: 68px;
+  }
+  .sectionabout-us {
+    gap: 0px;
+    padding: 30px;
+    flex-wrap: wrap;
+  }
+  .sectionben {
+    padding: 60px 0;
+  }
+  .sectionben-box {
+    flex-direction: column;
+  }
+  .sectionben-box__item {
+    max-width: 450px;
+  }
+  .sectionben-object {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sectionproc-title {
+    padding-bottom: 25px;
+  }
+  .sectionproc-title > .h2 {
+    font-size: 34px;
+  }
+  .row {
+    justify-content: center;
+    gap: 20px;
+  }
+  .item-subtitle {
+    font-size: 34px;
+    line-height: 46px;
+    padding-bottom: 10px;
+  }
+  .sectionben-title > .h2 {
+    font-size: 34px;
+    line-height: 46px;
+    padding-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0 20px;
+  }
+  .main {
+    padding: 30px 0;
+  }
+  .main-aboutUs > .h1 {
+    font-size: 38px;
+    line-height: 48px;
+    padding-bottom: 15px;
+  }
+  .sectionabout {
+    padding-bottom: 30px;
+  }
+  .sectionabout-us {
+    gap: 0px;
+    padding: 15px;
+  }
+  .sectionabout-who__item > .h3 {
+    font-size: 28px;
+    line-height: 46px;
+  }
+  .sectionabout-who__item > .label-two {
+    font-size: 16px;
+  }
+  .sectionproc {
+    padding-bottom: 30px;
+  }
+  .sectionproc-title {
+    padding-bottom: 25px;
+  }
+  .sectionproc-title > .h2 {
+    font-size: 28px;
+    line-height: 46px;
+  }
+  .sectionproc-box__item {
+    max-width: 400px;
+  }
+  .sectionobj {
+    padding: 30px;
+  }
+  .sectionobj-box:first-child {
+    padding-bottom: 25px;
+    flex-direction: column;
+  }
+  .sectionobj-box__item {
+    text-align: left;
+  }
+  .item-subtitle {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .sectionben {
+    padding: 30px 0;
+  }
+  .sectionben-box__item {
+    padding: 0 30px;
+  }
+  .sectionben-title > .h2 {
+    font-size: 28px;
+    line-height: 46px;
+    padding-bottom: 25px;
   }
 }

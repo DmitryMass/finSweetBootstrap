@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    gap: 20px;
     padding-bottom: 50px;
     &__item {
       max-width: 405px;
@@ -39,5 +39,10 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+  &-object {
+    &__item {
+      padding: 25px;
+    }
   }
 }
