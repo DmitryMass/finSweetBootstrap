@@ -1458,3 +1458,7 @@ li {
   border-radius: 12px 0px 0px 85px;
   background: #1c1e53;
 }
+
+.header-list > li:first-child > .header-nav__link {
+  color: #ffffff;
+}

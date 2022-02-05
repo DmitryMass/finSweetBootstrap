@@ -316,3 +316,24 @@
     }
   }
 }
+
+//  Header link
+
+.header-list {
+  & > li {
+    & > .header-about__link {
+      padding: 12px 16px;
+      display: inline-block;
+      color: $whiteGrey;
+      &:hover {
+        color: $white;
+        transition: 0.3s ease;
+      }
+    }
+  }
+  & > li {
+    &:nth-child(2) > .header-about__link {
+      color: $white;
+    }
+  }
+}

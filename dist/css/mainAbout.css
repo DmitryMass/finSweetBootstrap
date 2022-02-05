@@ -690,3 +690,18 @@
     line-height: 46px;
   }
 }
+
+.header-list > li > .header-about__link {
+  padding: 12px 16px;
+  display: inline-block;
+  color: #bbbbcb;
+}
+
+.header-list > li > .header-about__link:hover {
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+
+.header-list > li:nth-child(2) > .header-about__link {
+  color: #ffffff;
+}

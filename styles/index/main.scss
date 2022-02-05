@@ -619,3 +619,13 @@ li {
   border-radius: 12px 0px 0px 85px;
   background: $tintBlue;
 }
+
+//  HEADER NAV LINK
+
+.header-list {
+  & > li {
+    &:first-child > .header-nav__link {
+      color: $white;
+    }
+  }
+}
