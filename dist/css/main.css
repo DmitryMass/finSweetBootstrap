@@ -391,7 +391,11 @@
 }
 
 .main-btn__link {
-  padding: 20px 40px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-btn__link:hover {

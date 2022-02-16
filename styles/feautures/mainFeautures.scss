@@ -1,0 +1,57 @@
+@import "../var";
+@import "./benefitsSection";
+//
+@import "../global";
+
+////// Header Links hover
+/////
+
+.header-list {
+  & > li {
+    & > .feautures-nav__link {
+      padding: 12px 16px;
+      display: inline-block;
+      color: $whiteGrey;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+  & > li {
+    &:nth-child(3) > .feautures-nav__link {
+      color: $white;
+    }
+  }
+}
+/////  mEDia
+
+@media screen and (max-width: 1200px) {
+  // SECTION BENEFITS
+
+  .benefits {
+    padding: 60px;
+    &-users {
+      grid-template-columns: repeat(3, minmax(200px, 1fr));
+      justify-items: center;
+      gap: 10px;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 768px) {
+  // BENEFITS SECTION
+
+  .benefits {
+    padding: 30px;
+    &-users {
+      grid-template-columns: repeat(1, minmax(200px, 1fr));
+      justify-items: center;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+}
