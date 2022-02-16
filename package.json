@@ -6,7 +6,8 @@
   "scripts": {
     "rug-pug": "pug --pretty --watch index.pug",
     "rug-about": "pug --pretty --watch ./pug/pugMainPages/aboutUs.pug",
-    "rug-feautures": "pug --pretty --watch ./pug/pugMainPages/feautures.pug"
+    "rug-feautures": "pug --pretty --watch ./pug/pugMainPages/feautures.pug",
+    "rug-pricing": "pug --pretty --watch ./pug/pugMainPages/pricing.pug"
   },
   "keywords": [],
   "author": "",

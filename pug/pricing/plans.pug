@@ -1,0 +1,91 @@
+section.price
+    .container 
+        .price-title
+            h2.h2 Our Pricing Plans
+            p.p2-body When you’re ready to go beyond prototyping in Figma, Webflow is ready to help you bring your designs to life — without coding them.
+        .price-plans 
+            each priceItem in priceVar
+                .slide 
+                    .slide-info
+                        .slide-price 
+                            h3.h3=priceItem.price
+                            p.p1-body=priceItem.month
+                        .slide-service 
+                            h6.h6=priceItem.service
+                            p.p2-body=priceItem.serviceTitle
+                        ul.slide-list 
+                            li.slide-li 
+                                object(data=priceItem.object, type="") 
+                                p.p1-body=priceItem.first
+                            li.slide-li 
+                                object(data=priceItem.object, type="") 
+                                p.p1-body=priceItem.second
+                            li.slide-li 
+                                object(data=priceItem.object, type="") 
+                                p.p1-body=priceItem.third
+                            li.slide-li.no-active 
+                                object(data=priceItem.object2, type="") 
+                                p.p1-body=priceItem.four
+                            li.slide-li.no-active 
+                                object(data=priceItem.object2, type="") 
+                                p.p1-body=priceItem.five
+                    button(type="sumbit").slide-btn.button-black
+                        a.slide-href(href="#")=priceItem.button
+            each priceItem in priceVar2nd
+                .slide
+                    .slide-info
+                        .slide-price 
+                            h3.h3=priceItem.price
+                            p.p1-body=priceItem.month
+                        .slide-service.slide-second 
+                            h6.h6=priceItem.service
+                            p.p2-body=priceItem.serviceTitle
+                        ul.slide-list 
+                            li.slide-li 
+                                object(data=priceItem.object, type="") 
+                                p.p1-body=priceItem.first
+                            li.slide-li 
+                                object(data=priceItem.object, type="") 
+                                p.p1-body=priceItem.second
+                            li.slide-li 
+                                object(data=priceItem.object, type="") 
+                                p.p1-body=priceItem.third
+                            li.slide-li
+                                object(data=priceItem.object, type="") 
+                                p.p1-body=priceItem.four
+                            li.slide-li
+                                object(data=priceItem.object, type="") 
+                                p.p1-body=priceItem.five
+                    button(type="sumbit").slide-btn.button-black
+                        a.slide-href(href="#")=priceItem.button
+            each priceItem in priceVar3rd
+                .slide 
+                    .slide-info
+                        .slide-price 
+                            h3.h3=priceItem.price
+                            p.p1-body=priceItem.month
+                        .slide-service.slide-third
+                            h6.h6=priceItem.service
+                            p.p2-body=priceItem.serviceTitle
+                        ul.slide-list
+                            li.slide-li 
+                                object(data=priceItem.object, type="") 
+                                p.p1-body=priceItem.first
+                            li.slide-li 
+                                object(data=priceItem.object, type="") 
+                                p.p1-body=priceItem.second
+                            li.slide-li 
+                                object(data=priceItem.object, type="") 
+                                p.p1-body=priceItem.third
+                            li.slide-li 
+                                object(data=priceItem.object, type="") 
+                                p.p1-body=priceItem.four
+                            li.slide-li
+                                object(data=priceItem.object, type="") 
+                                p.p1-body=priceItem.five
+                            li.slide-li
+                                object(data=priceItem.object, type="") 
+                                p.p1-body=priceItem.six
+                    button(type="sumbit").slide-btn
+                        a.slide-href(href="#")=priceItem.button
+

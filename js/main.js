@@ -1,4 +1,5 @@
-var myCarousel = document.querySelector("#carouselExampleControls");
-var carousel = new bootstrap.Carousel(myCarousel, {
+let myCarousel = document.querySelector("#carouselExampleControls");
+let carousel = new bootstrap.Carousel(myCarousel, {
   interval: false,
 });
+/////////////////////
