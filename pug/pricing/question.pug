@@ -1,0 +1,47 @@
+section.questions
+    .container.accordion-flex  
+        .sectionfive-ask 
+            h3.h3 Frequently asked questions
+            a.label-one(href="#") Contact us for more info
+        .sectionfive-accordion 
+            #accordionExample.accordion
+                .accordion-item
+                    h2#headingOne.accordion-header
+                        button.accordion-button.h6(type='button' data-bs-toggle='collapse' data-bs-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne') 
+                            span.accordion-span.h6 01
+                            |How much time does it take?
+                    #collapseOne.accordion-collapse.collapse.show(aria-labelledby='headingOne' data-bs-parent='#accordionExample')
+                        .accordion-body
+                            p.label-one Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                .accordion-item
+                    h2#headingTwo.accordion-header
+                        button.accordion-button.collapsed.h6(type='button' data-bs-toggle='collapse' data-bs-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo') 
+                            span.accordion-span.h6 02
+                            |What is your class naming convention?
+                    #collapseTwo.accordion-collapse.collapse(aria-labelledby='headingTwo' data-bs-parent='#accordionExample')
+                        .accordion-body
+                            p.label-one Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                .accordion-item
+                    h2#headingThree.accordion-header
+                        button.accordion-button.collapsed.h6(type='button' data-bs-toggle='collapse' data-bs-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree') 
+                            span.accordion-span.h6 02
+                            |How do you communicate?
+                    #collapseThree.accordion-collapse.collapse(aria-labelledby='headingThree' data-bs-parent='#accordionExample')
+                        .accordion-body
+                            p.label-one Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                .accordion-item
+                    h2#headingFour.accordion-header
+                        button.accordion-button.collapsed.h6(type='button' data-bs-toggle='collapse' data-bs-target='#collapseFour' aria-expanded='false' aria-controls='collapseFour') 
+                            span.accordion-span.h6 02
+                            |I have a bigger project. Can you handle it?
+                    #collapseFour.accordion-collapse.collapse(aria-labelledby='headingFour' data-bs-parent='#accordionExample')
+                        .accordion-body
+                            p.label-one Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                .accordion-item
+                    h2#headingFive.accordion-header
+                        button.accordion-button.collapsed.h6(type='button' data-bs-toggle='collapse' data-bs-target='#collapseFive' aria-expanded='false' aria-controls='collapseFive') 
+                            span.accordion-span.h6 02
+                            |What is your class naming convention?
+                    #collapseFive.accordion-collapse.collapse(aria-labelledby='headingFive' data-bs-parent='#accordionExample')
+                        .accordion-body
+                            p.label-one Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

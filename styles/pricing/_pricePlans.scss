@@ -22,7 +22,14 @@
   border-radius: 20px;
   min-height: 745px;
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   cursor: pointer;
+  box-shadow: 0px 0px 5px $darkBlue;
+  &:hover {
+    box-shadow: 0px 0px 8px $darkBlue;
+  }
   &-price {
     display: flex;
     align-items: center;
