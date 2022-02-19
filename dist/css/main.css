@@ -334,6 +334,10 @@
   display: none;
 }
 
+.navbar-nav {
+  margin-bottom: 20px;
+}
+
 .navbar-nav > .header-btn {
   margin-top: 15px;
 }
