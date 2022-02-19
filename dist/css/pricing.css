@@ -246,16 +246,16 @@
   color: white;
 }
 
-.slide.active button {
+.slide.active .slide-btn {
   background: #fcd980;
   transition: all 0.3s linear;
 }
 
-.slide.active button:hover {
+.slide.active .slide-btn:hover {
   background: #fde4a6;
 }
 
-.slide.active button > a {
+.slide.active .slide-btn > a {
   color: black;
 }
 

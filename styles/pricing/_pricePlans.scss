@@ -117,7 +117,7 @@
 .slide.active p {
   color: white;
 }
-.slide.active button {
+.slide.active .slide-btn {
   background: $yellow;
   transition: all 0.3s linear;
   &:hover {
