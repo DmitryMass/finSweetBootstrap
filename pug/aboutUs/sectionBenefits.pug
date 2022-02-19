@@ -5,7 +5,7 @@ section.sectionben
         .sectionben-box
             each benVar in benefitsItem
                 .sectionben-box__item 
-                    object(data=benVar.obj, type="")
+                    object(data=benVar.obj, type="image/svg+xml")
                     h6.h6=benVar.title
                     p.p1-body=benVar.txt
         .sectionben-users 
@@ -14,4 +14,4 @@ section.sectionben
                 p.p1-body Finsweet Users
             .sectionben-object
                 each objVar in objectItem
-                    object.sectionben-object__item(data=objVar.obj, type="") 
+                    object.sectionben-object__item(data=objVar.obj, type="image/svg+xml") 

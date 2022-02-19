@@ -4,17 +4,17 @@ section.benefits
             .benefits-users__item 
                 h3.h3 100.000
                 p.p1-body Figma Users
-            object.benefits-users__obj(data="../../assets/icons/logoipsumFirst.svg", type="") 
-            object.benefits-users__obj(data="../../assets/icons/logoipsumSecond.svg", type="") 
-            object.benefits-users__obj(data="../../assets/icons/logoipsumThird.svg", type="") 
-            object.benefits-users__obj(data="../../assets/icons/logoipsumFour.svg", type="") 
-            object.benefits-users__obj(data="../../assets/icons/logoipsumFive.svg", type="") 
+            object.benefits-users__obj(data="../../assets/icons/logoipsumFirst.svg", type="image/svg+xml") 
+            object.benefits-users__obj(data="../../assets/icons/logoipsumSecond.svg", type="image/svg+xml") 
+            object.benefits-users__obj(data="../../assets/icons/logoipsumThird.svg", type="image/svg+xml") 
+            object.benefits-users__obj(data="../../assets/icons/logoipsumFour.svg", type="image/svg+xml") 
+            object.benefits-users__obj(data="../../assets/icons/logoipsumFive.svg", type="image/svg+xml") 
         .benefits-box
             .benefits-title 
                 h2.h2 The benefits of working with our team
             .benefits-boxes
                 each benVar in benefitsItem
                     .benefits-boxes__item 
-                        object(data=benVar.obj, type="") 
+                        object(data=benVar.obj, type="image/svg+xml") 
                         h6.h6=benVar.title
                         p.p1-body=benVar.txt
