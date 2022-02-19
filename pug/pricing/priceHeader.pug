@@ -8,12 +8,11 @@ header.header
                 each headerLink in linkVar
                     li
                         a.price-nav__link(href=headerLink.link)=headerLink.title
-                button(type='button').header-btn
-                    a.header-btn__link(href="#") Contact us
+            a.header-btn__link.header-btn(href="#") Contact us
         nav.navbar
             button.navbar-toggler(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasNavbar' aria-controls='offcanvasNavbar')
                 span.navbar-toggler-icon
-            #offcanvasNavbar.offcanvas.offcanvas-end(tabindex='-1' aria-labelledby='offcanvasNavbarLabel')
+            #offcanvasNavbar.offcanvas.offcanvas-end(tabindex='-1')
                 .offcanvas-header
                     a.offcanvas-link(href="#") {Finsweet
                     button.text-reset.btn-exit(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
@@ -23,6 +22,5 @@ header.header
                         each headerLink in linkVar
                             li.nav-item
                                 a.nav-link(href=headerLink.link)=headerLink.title
-                        button(type='button').header-btn
-                            a.header-btn__link(href="#") Contact us
+                    a.header-btn__link.header-btn(href="#") Contact us
 
