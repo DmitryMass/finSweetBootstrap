@@ -3,7 +3,7 @@ section.sectionsecond
         .sectionsecond-title.flex-wrap
             h2.h2 View our projects
             a(href="#").label-two View More
-                object.sectionsecond-title__obj(data="./assets/icons/arrowBlack.svg", type="") 
+                object.sectionsecond-title__obj(data="./assets/icons/arrowBlack.svg", type="image/svg+xml") 
         .sectionsecond-project.flex-wrap
             .sectionsecond-box1
                 each section2Var in sectionSecondVar
@@ -12,14 +12,14 @@ section.sectionsecond
                         h6.h6=section2Var.title
                         p.p2-body=section2Var.txt 
                         a.sectionsecond-link(href=section2Var.link)=section2Var.linkTitle 
-                            object.sectionsecond-obj(data=section2Var.object, type="") 
+                            object.sectionsecond-obj(data=section2Var.object, type="image/svg+xml") 
             .sectionsecond-box2
                 .sectionsecond-block
                     img(src="./assets/images/pictureSecond.png", alt="")
                     .sectionsecond-block__list
                         h6.h6 Unisaas Website Design
                         a.sectionsecond-link(href="#") View project 
-                            object.sectionsecond-obj(data="./assets/icons/arrowGold.svg", type="") 
+                            object.sectionsecond-obj(data="./assets/icons/arrowGold.svg", type="image/svg+xml") 
                 .sectionsecond-block2   
                     a.sectionsecond-block2__link(href="#") 
                         img(src="./assets/images/pictureThird.png", alt="")
