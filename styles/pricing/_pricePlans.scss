@@ -17,6 +17,8 @@
   }
 }
 .slide {
+  min-width: 350px;
+  max-width: 600px;
   padding: 65px 50px;
   background: $grey;
   border-radius: 20px;
@@ -92,6 +94,8 @@
 ///////////////// JS SLIDE ACTIVE
 
 .slide.active {
+  min-width: 350px;
+  max-width: 600px;
   background: $tintBlue;
   transition: all 0.3s ease-in;
   box-shadow: 0px 0px 15px $darkBlue;

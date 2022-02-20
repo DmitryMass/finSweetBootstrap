@@ -1,0 +1,93 @@
+.user {
+  &-first,
+  &-second,
+  &-third,
+  &-four {
+    min-height: 655px;
+    padding: 130px 0;
+    @media screen and (max-width: 1200px) {
+      padding: 60px 0;
+    }
+  }
+  &-four {
+    background: $lightYellow;
+  }
+  &-second {
+    background: $grey;
+  }
+}
+.sectionobj-box:first-child {
+  padding-bottom: 0px;
+}
+
+.questions {
+  padding: 130px 0;
+}
+//   SECTION OBJ  CSS STYLE
+.sectionobj-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__item {
+    max-width: 625px;
+  }
+  &__img {
+    & > img {
+      width: 100%;
+    }
+  }
+}
+.item {
+  &-title,
+  &-subtitle {
+    padding-bottom: 15px;
+  }
+}
+.item-subtitle {
+  padding-bottom: 15px;
+}
+// media
+
+@media screen and (max-width: 1200px) {
+  .sectionobj-box {
+    flex-direction: column;
+    &__item {
+      text-align: center;
+      padding-bottom: 15px;
+      & > .h3 {
+        font-size: 34px;
+        line-height: 46px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+  .reverses {
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 576px) {
+  .user {
+    &-first,
+    &-second,
+    &-third,
+    &-four {
+      padding: 30px 0;
+    }
+  }
+  .sectionobj-box {
+    &__item {
+      & > .h3 {
+        font-size: 28px;
+        line-height: 36px;
+      }
+    }
+  }
+  .item {
+    &-title {
+      padding: 0;
+    }
+  }
+  .questions {
+    padding: 30px 0;
+  }
+}

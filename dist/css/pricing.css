@@ -134,6 +134,8 @@
 }
 
 .slide {
+  min-width: 350px;
+  max-width: 600px;
   padding: 65px 50px;
   background: #f4f6fc;
   border-radius: 20px;
@@ -221,6 +223,8 @@
 }
 
 .slide.active {
+  min-width: 350px;
+  max-width: 600px;
   background: #1c1e53;
   transition: all 0.3s ease-in;
   box-shadow: 0px 0px 15px #282938;
@@ -401,4 +405,47 @@
 
 .header-list > li:nth-child(4) > .price-nav__link {
   color: #ffffff;
+}
+
+@media screen and (max-width: 1200px) {
+  .price {
+    padding: 60px 0;
+  }
+  .price-plans {
+    justify-content: center;
+  }
+  .price-title {
+    padding-bottom: 30px;
+  }
+  .price-title > .h2 {
+    font-size: 38px;
+    line-height: 48px;
+  }
+  .questions {
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .slide,
+  .slide.active {
+    min-height: auto;
+    padding: 50px;
+    justify-content: center;
+  }
+  .slide-info, .slide-service,
+  .slide.active-info,
+  .slide.active-service {
+    padding-bottom: 40px;
+  }
+  .slide-price,
+  .slide.active-price {
+    padding-bottom: 20px;
+  }
+  .price {
+    padding: 30px 0px;
+  }
+  .questions {
+    padding-bottom: 30px;
+  }
 }

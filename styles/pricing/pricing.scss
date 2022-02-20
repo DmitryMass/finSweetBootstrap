@@ -22,3 +22,46 @@
     }
   }
 }
+
+//  media
+
+@media screen and (max-width: 1200px) {
+  .price {
+    padding: 60px 0;
+    &-plans {
+      justify-content: center;
+    }
+    &-title {
+      padding-bottom: 30px;
+      & > .h2 {
+        font-size: 38px;
+        line-height: 48px;
+      }
+    }
+  }
+  .questions {
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .slide,
+  .slide.active {
+    min-height: auto;
+    padding: 50px;
+    justify-content: center;
+    &-info,
+    &-service {
+      padding-bottom: 40px;
+    }
+    &-price {
+      padding-bottom: 20px;
+    }
+  }
+  .price {
+    padding: 30px 0px;
+  }
+  .questions {
+    padding-bottom: 30px;
+  }
+}
