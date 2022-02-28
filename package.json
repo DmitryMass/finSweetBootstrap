@@ -7,7 +7,9 @@
     "rug-pug": "pug --pretty --watch index.pug",
     "rug-about": "pug --pretty --watch ./pug/pugMainPages/aboutUs.pug",
     "rug-feautures": "pug --pretty --watch ./pug/pugMainPages/feautures.pug",
-    "rug-pricing": "pug --pretty --watch ./pug/pugMainPages/pricing.pug"
+    "rug-pricing": "pug --pretty --watch ./pug/pugMainPages/pricing.pug",
+    "rug-faq": "pug --pretty --watch ./pug/pugMainPages/faq.pug",
+    "rug-blog": "pug --pretty --watch ./pug/pugMainPages/blog.pug"
   },
   "keywords": [],
   "author": "",

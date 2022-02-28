@@ -1,0 +1,24 @@
+main.main
+    .container 
+        .blog-title
+            h2.h2 A UX Case Study on Creating a Studious Environment for Students
+            p.label-two Andrew Jonson Posted on 27th January 2021
+        .blog-bgc 
+            img.blog-img(src="../../assets/images/blogbgc.png", alt="")
+        .blog-about 
+            p.p1-body Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.
+            a.p1-body(href="#") Read more
+        .blog-our
+            .blog-subtitle
+                h2.h2 Our Blog
+            .sectionseven-box.flex-box
+                each blogItem in blogVar 
+                    .sectionseven-box__item 
+                        img(src=blogItem.img, alt="")
+                        p.label-two=blogItem.date
+                        h6.h6=blogItem.title
+                        p.p1-body=blogItem.txt
+                        a.label-two(href=blogItem.href)=blogItem.linkName
+                            object.sectionseven-box__obj(data=blogItem.object, type="") 
+
+            

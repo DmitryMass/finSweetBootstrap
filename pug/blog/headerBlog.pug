@@ -1,0 +1,25 @@
+header.header 
+    .container.flex-wrap
+        .header-logo 
+            a.header-logo__link(href="../../index.html") 
+                object.header-logo__obj(data="../../assets/icons/headerlogo.svg", type="image/svg+xml") 
+        .header-nav 
+            ul.header-list.flex-container
+                each headerLink in linkVar
+                    li
+                        a.blog-nav__link(href=headerLink.link)=headerLink.title
+            a.header-btn__link.header-btn(href="#") Contact us
+        nav.navbar
+            button.navbar-toggler(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasNavbar' aria-controls='offcanvasNavbar')
+                span.navbar-toggler-icon
+            #offcanvasNavbar.offcanvas.offcanvas-end(tabindex='-1')
+                .offcanvas-header
+                    a.offcanvas-link(href="#") {Finsweet
+                    button.text-reset.btn-exit(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
+                        ion-icon.btn-icon(name='close-outline')
+                .offcanvas-body
+                    ul.navbar-nav.justify-content-end.flex-grow-1.pe-3
+                        each headerLink in linkVar
+                            li.nav-item
+                                a.nav-link(href=headerLink.link)=headerLink.title
+                    a.header-btn__link.header-btn(href="#") Contact us

@@ -1,0 +1,9 @@
+footer.footer 
+    .container.flex-wrap
+        .footer-logo 
+            p.p2-body Copyright 2021, Finsweet.com
+        .footer-nav 
+            ul.footer-list.flex-container
+                each footerLink in linkVar
+                    li
+                        a.footer-link.p2-body(href=footerLink.link)=footerLink.title 
