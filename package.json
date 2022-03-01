@@ -9,7 +9,8 @@
     "rug-feautures": "pug --pretty --watch ./pug/pugMainPages/feautures.pug",
     "rug-pricing": "pug --pretty --watch ./pug/pugMainPages/pricing.pug",
     "rug-faq": "pug --pretty --watch ./pug/pugMainPages/faq.pug",
-    "rug-blog": "pug --pretty --watch ./pug/pugMainPages/blog.pug"
+    "rug-blog": "pug --pretty --watch ./pug/pugMainPages/blog.pug",
+    "rug-contact": "pug --pretty --watch ./pug/pugMainPages/contact.pug"
   },
   "keywords": [],
   "author": "",

@@ -8,7 +8,7 @@ header.header
                 each headerLink in linkVar
                     li
                         a.faq-nav__link(href=headerLink.link)=headerLink.title
-            a.header-btn__link.header-btn(href="#") Contact us
+            a.header-btn__link.header-btn(href="./contact.html") Contact us
         nav.navbar
             button.navbar-toggler(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasNavbar' aria-controls='offcanvasNavbar')
                 span.navbar-toggler-icon
@@ -22,4 +22,4 @@ header.header
                         each headerLink in linkVar
                             li.nav-item
                                 a.nav-link(href=headerLink.link)=headerLink.title
-                    a.header-btn__link.header-btn(href="#") Contact us
+                    a.header-btn__link.header-btn(href="./contact.html") Contact us
