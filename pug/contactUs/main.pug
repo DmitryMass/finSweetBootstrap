@@ -5,7 +5,7 @@ main.main
                 h2.h2 Contact Us
                 p.p1-body Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
             .contact-form 
-                form( method="#") 
+                form(method="POST") 
                     .contact-box    
                         .contact-name
                             label.label-one(for="text") Name
@@ -20,6 +20,6 @@ main.main
                             label.label-one(for="subjectTwo") Subject 
                             input.contact-input(type="text" id="subjectTwo" placeholder="Subject")
                     .contact-text 
-                        label.label-one(for="") Message   
-                        textarea.contact-txt(name="")  
+                        label.label-one(for="area") Message   
+                        textarea.contact-txt(name="area" id="area")  
                     button.button-black.contact-btn(type="submit") Send Message
